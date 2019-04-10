@@ -41,6 +41,6 @@ if __name__ == '__main__':
     sklearn_model.fit(trainset_features, trainset_label)
     testset_predicted_label = sklearn_model.predict(testset_features)
 
-
+    sum(testset_predicted_label == testset_label) / len(testset_label)
 
 
